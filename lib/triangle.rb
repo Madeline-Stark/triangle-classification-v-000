@@ -15,7 +15,6 @@ class Triangle
           raise TriangleError
         rescue TriangleError => error
           puts error.message
-          binding.pry
       end
       elsif side_one == side_two && side_one == side_three
         kind = :equilateral
@@ -26,6 +25,8 @@ class Triangle
       end
       kind
     end
+
+    binding.pry
 
       class TriangleError < StandardError
         def message
