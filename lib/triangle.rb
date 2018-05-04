@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
   attr_accessor :side_one, :side_two, :side_three, :kind
 
@@ -14,6 +15,7 @@ class Triangle
           raise TriangleError
         rescue TriangleError => error
           puts error.message
+          binding.pry
       end
       elsif side_one == side_two && side_one == side_three
         kind = :equilateral
