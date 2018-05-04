@@ -27,11 +27,8 @@ class Triangle
     end
 
       class TriangleError < StandardError
-        #def message
-        #{}"All sides must be greater than 0 and any two sides added together must be greater than the third side!"
-        #end
+  
       end
 
-      #binding.pry
 
 end
